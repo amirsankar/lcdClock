@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="LargeView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m3E-p3-LAS">
+                                <rect key="frame" x="113" y="28" width="375" height="210"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8EA-jR-HB3" userLabel="SmallView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t35-Rr-lLh" userLabel="MyDigit1" customClass="MyDigit">
+                                                <rect key="frame" x="3" y="51" width="80" height="110"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nlA-nX-0zq" userLabel="MyDigit2" customClass="MyDigit">
+                                                <rect key="frame" x="86" y="51" width="80" height="110"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H6r-wd-t3m" userLabel="MyDigit3" customClass="MyDigit">
+                                                <rect key="frame" x="209" y="51" width="80" height="110"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-TZ-gK5" userLabel="MyDigit4" customClass="MyDigit">
+                                                <rect key="frame" x="292" y="51" width="80" height="110"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H9S-50-Vl7" userLabel="FirstDot">
+                                                <rect key="frame" x="181" y="82" width="15" height="15"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sV3-Er-1U6" userLabel="SecondDot">
+                                                <rect key="frame" x="181" y="119" width="15" height="16"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUZ-Rg-pHn">
+                                                <rect key="frame" x="330" y="169" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.42874923819999999" green="0.84429823609999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="210" id="gqT-kp-yN9"/>
+                                            <constraint firstAttribute="width" constant="375" id="uOe-fL-pMH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8EA-jR-HB3" firstAttribute="centerY" secondItem="m3E-p3-LAS" secondAttribute="centerY" id="Jzr-4f-8AN"/>
+                                    <constraint firstItem="8EA-jR-HB3" firstAttribute="centerX" secondItem="m3E-p3-LAS" secondAttribute="centerX" id="MPr-fD-Ikk"/>
+                                </constraints>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HVI-HJ-bKp">
+                                <rect key="frame" x="20" y="286" width="560" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="aMW-3n-CU0"/>
+                                    <constraint firstAttribute="height" constant="28" id="p4a-JS-AUG"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Sky Blue"/>
+                                    <segment title="Dark Blue"/>
+                                    <segment title="Grey"/>
+                                    <segment title="Pink"/>
+                                </segments>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aMW-3n-CU0"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="backroundColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="ilK-Sr-mEO"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4Rj-hQ-Nlk">
+                                <rect key="frame" x="20" y="250" width="87" height="29"/>
+                                <segments>
+                                    <segment title="24hr"/>
+                                    <segment title="12hr"/>
+                                </segments>
+                                <connections>
+                                    <action selector="timeType:" destination="BYZ-38-t0r" eventType="valueChanged" id="Kac-gC-Rzr"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UDR-Ws-kbE">
+                                <rect key="frame" x="20" y="322" width="560" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="81b-X0-5d4"/>
+                                    <constraint firstAttribute="height" constant="28" id="y4a-w0-aZ7"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Orange"/>
+                                    <segment title="Green"/>
+                                    <segment title="Yellow"/>
+                                </segments>
+                                <connections>
+                                    <action selector="digitColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hn6-Zd-eJv"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UQj-GA-8eX">
+                                <rect key="frame" x="501" y="250" width="79" height="29"/>
+                                <segments>
+                                    <segment title="EST"/>
+                                    <segment title="PST"/>
+                                </segments>
+                                <connections>
+                                    <action selector="timeZone:" destination="BYZ-38-t0r" eventType="valueChanged" id="doI-7l-N7R"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42874923819999999" green="0.84429823609999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="UQj-GA-8eX" secondAttribute="trailing" id="AaK-Vz-WPR"/>
+                            <constraint firstItem="UDR-Ws-kbE" firstAttribute="top" secondItem="HVI-HJ-bKp" secondAttribute="bottom" constant="8" id="Bi8-z6-XjP"/>
+                            <constraint firstItem="m3E-p3-LAS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="C5p-7L-TnQ"/>
+                            <constraint firstItem="HVI-HJ-bKp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IP5-gd-bdY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HVI-HJ-bKp" secondAttribute="trailing" id="Jcn-si-88S"/>
+                            <constraint firstItem="m3E-p3-LAS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vbs-BL-Kvx"/>
+                            <constraint firstItem="UQj-GA-8eX" firstAttribute="top" secondItem="m3E-p3-LAS" secondAttribute="bottom" constant="12" id="Vye-ZG-Nav"/>
+                            <constraint firstItem="UDR-Ws-kbE" firstAttribute="top" secondItem="HVI-HJ-bKp" secondAttribute="bottom" constant="8" id="bHU-jk-cJq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UDR-Ws-kbE" secondAttribute="trailing" id="dlL-7J-MaL"/>
+                            <constraint firstItem="UDR-Ws-kbE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hHJ-hF-0SH"/>
+                            <constraint firstItem="4Rj-hQ-Nlk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="isK-3e-dOE"/>
+                            <constraint firstItem="HVI-HJ-bKp" firstAttribute="top" secondItem="UQj-GA-8eX" secondAttribute="bottom" constant="8" id="wX8-On-Avp"/>
+                            <constraint firstItem="4Rj-hQ-Nlk" firstAttribute="top" secondItem="m3E-p3-LAS" secondAttribute="bottom" constant="12" id="zX5-lb-j6P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FirstDot" destination="H9S-50-Vl7" id="txO-AY-jRh"/>
+                        <outlet property="SecondDot" destination="sV3-Er-1U6" id="0vc-gS-IhD"/>
+                        <outlet property="ampm" destination="QUZ-Rg-pHn" id="FRT-2E-4nw"/>
+                        <outlet property="backgroundColor2" destination="HVI-HJ-bKp" id="e4E-uh-4MZ"/>
+                        <outlet property="digitColor2" destination="UDR-Ws-kbE" id="ksa-gd-iKH"/>
+                        <outlet property="largeView" destination="8bC-Xf-vdC" id="kJc-o9-IfR"/>
+                        <outlet property="myDigit1" destination="t35-Rr-lLh" id="47K-cq-7GU"/>
+                        <outlet property="myDigit2" destination="nlA-nX-0zq" id="KC3-YX-JTE"/>
+                        <outlet property="myDigit3" destination="H6r-wd-t3m" id="Sk6-lJ-7Js"/>
+                        <outlet property="myDigit4" destination="g9s-TZ-gK5" id="YLD-Fb-Zpk"/>
+                        <outlet property="smallView" destination="8EA-jR-HB3" id="r03-I1-9YS"/>
+                        <outlet property="timeType2" destination="4Rj-hQ-Nlk" id="eHQ-nD-Slz"/>
+                        <outlet property="timeZone2" destination="UQj-GA-8eX" id="W6k-sd-cXC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275" y="227"/>
+        </scene>
+    </scenes>
+</document>
